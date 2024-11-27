@@ -1,6 +1,6 @@
 from textblob import TextBlob
 
-end_keywords = ["end", "end chat", "finish", "quit", "bye", "exit"]
+end_keywords = ["end", "end chat", "finish", "quit", "bye", "exit", "q"]
 
 intents_data = {
     "hours": {
@@ -10,6 +10,14 @@ intents_data = {
     "return" : {
         "keywords": ["refund", "money back", "return"],
         "response": "I'd be happy to help you with the return process. Let me transfer you to a live agent."
+    },
+    "contact":{
+        "keywords": ["contact", "reach out", "address", "phone"],
+        "response": 
+            '''Contact us at:
+    123 beet street,
+    Irvine, CA, 10924
+    Phone: 000-000-00000.'''
     }
 }
 
